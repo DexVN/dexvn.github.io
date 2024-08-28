@@ -15,7 +15,7 @@
     <title>I'm Dex</title>
 </head>
 
-<body>
+<body class="bg-light">
 
     <!-- Navbar -->
     <nav class="z-1 navbar navbar-expand-md sticky-top bg-light">
@@ -77,7 +77,7 @@
         </div>
     </nav>
 
-    <main class="main bg-light">
+    <main class="main">
 
         <!-- Dex Section -->
         <section id="dex" class="dex section">
@@ -393,10 +393,10 @@
             <div class="container">
                 <h1 class="text-center fw-bold">Projects</h1>
                 <p class="text-center fw-light text-secondary" style="font-size: 1.75rem;">Things I’ve built so far</p>
-                <div class="row content justify-content-center" style="padding: 12px">
+                <div class="row content justify-content-center justify-content-md-center justify-content-lg-center justify-content-xxl-between align-items-center gap-5" style="padding: 12px">
                     <!-- First Project -->
                     <div
-                        class="col-12 col-lg-5 offset-lg-1 col-xxl-3 offset-xxl-1 project-item card rounded-5 border-0 shadow-lg p-0 pb-3">
+                        class="col-12 col-md-7 col-lg-5 col-xxl-4 project-item card rounded-5 border-0 shadow-lg p-0 pb-3">
                         <img src="./images/project_01.png" alt="project 01" class="card-img-top">
                         <div class="card-body text-dark px-4">
                             <h5 class="card-title">Project 01</h5>
@@ -451,7 +451,7 @@
                     </div>
                     <!-- Second Project -->
                     <div
-                        class="col-12 col-lg-5 offset-lg-1 col-xxl-3 offset-xxl-1 project-item card rounded-4 border-0 shadow-lg p-0 pb-3 mt-4 mt-lg-0 mt-xxl-0">
+                        class="col-12 col-md-7 col-lg-5 col-xxl-4 project-item card rounded-4 border-0 shadow-lg p-0 pb-3">
                         <img src="./images/project_02.png" alt="project 02" class="card-img-top">
                         <div class="card-body text-dark px-4">
                             <h5 class="card-title">Project 02</h5>
@@ -505,7 +505,7 @@
                     </div>
                     <!-- Third Project -->
                     <div
-                        class="col-12 col-lg-5 offset-lg-1 col-xxl-3 offset-xxl-1 project-item card rounded-4 border-0 shadow-lg p-0 pb-3 mt-4 mt-xxl-0">
+                        class="col-12 col-md-7 col-lg-5 col-xxl-4 project-item card rounded-4 border-0 shadow-lg p-0 pb-3">
                         <img src="./images/project_03.png" alt="project 03" class="card-img-top">
                         <div class="card-body text-dark px-4">
                             <h5 class="card-title">Project 03</h5>
@@ -565,9 +565,9 @@
         <section id="contact" class="dex-contact section pb-4">
             <div class="container">
                 <!-- Phone -->
-                <div class="row align-items-center">
+                <div class="row align-items-center md-gap-3">
                     <!-- Logo -->
-                    <div class="col-2">
+                    <div class="g-col-12 col-md-2 text-center py-2">
                         <svg width="98" height="38" viewBox="0 0 98 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M45.568 25.58C47.404 25.58 48.952 23.96 48.952 21.764C48.952 19.568 47.368 18.128 45.568 18.128C43.768 18.128 42.328 19.604 42.328 21.764C42.328 23.888 43.768 25.58 45.568 25.58ZM53.02 8.552V29H50.068L49.816 26.948C49.024 28.496 46.504 29.18 44.884 29.18C41.068 29.18 38.26 25.76 38.26 21.728C38.26 17.696 41.14 14.42 45.1 14.42C45.784 14.42 47.656 14.528 48.952 16.076V8.552H53.02ZM68.2353 24.464L69.8553 26.912C68.5233 28.82 66.2193 29.18 64.3113 29.18C60.2073 29.18 56.7873 26.984 56.7873 21.908C56.7873 17.912 58.8753 14.42 63.7353 14.42C67.6953 14.42 70.7193 16.976 70.7193 21.584V23.024H60.8913C60.8913 25.436 63.2313 25.796 64.2753 25.796C65.3193 25.796 67.2633 25.436 68.2353 24.464ZM63.8073 18.2C62.6913 18.2 60.8913 18.776 60.8913 20.468H66.7593C66.7593 18.74 64.8873 18.2 63.8073 18.2ZM82.3125 29L79.9365 25.076L77.5605 29H72.7005L77.0205 22.052L72.7005 14.6H77.5965L79.9365 19.136L82.2765 14.6H87.1725L82.8525 22.052L87.1725 29H82.3125Z"
@@ -593,12 +593,12 @@
                         </svg>
                     </div>
                     <!-- Phone -->
-                    <div class="col-8 d-flex justify-content-end gap-5">
+                    <div class="g-col-12 col-md-8 d-flex justify-content-center gap-5 py-2">
                         <a href="#" class="fw-light">+01 234 678</a>
                         <a href="#" class="fw-light">khanhld.developer@gmail.com</a>
                     </div>
                     <!-- Social -->
-                    <div class="col-2 d-flex justify-content-end gap-3 py-5">
+                    <div class="g-col-12 col-md-2 d-flex justify-content-center gap-3 py-5 py-2">
                         <a href="#">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -636,8 +636,15 @@
         </section>
     </main>
 
-    <footer>
+    <hr>
 
+    <footer class="footer text-center py-2">
+        <!--Powered By-->
+        <div class="text-center">
+            <p class="fw-light">
+                Powered by <a class="#" style="cursor: pointer; color: #f31260;">Dex</a>
+            </p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
