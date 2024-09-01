@@ -67,6 +67,10 @@ a {
   justify-content: center;
 }
 
+.project-item {
+  max-width: 375px;;
+}
+
 .container {
   --bs-gutter-x: 2.5rem;
   --bs-gutter-y: 0;
