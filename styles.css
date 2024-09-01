@@ -180,6 +180,18 @@ a {
   font-size: 1.125rem;
 }
 
+.contact-heading {
+  font-size: 1.125rem;
+  word-break: break-all;
+  width: 100%;
+}
+
+.contact-heading span {
+  font-size: inherit;
+  word-break: break-all;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .nav-link {
     text-align: right;
@@ -190,6 +202,10 @@ a {
 @media (min-width: 1200px) {
     .dex-title {
         font-size: 4rem;
+    }
+
+    .contact-heading {
+      font-size: 3.625rem;
     }
 }
 
