@@ -45,9 +45,13 @@
 
 body {
   margin: 0;
-  color: #42446E;
-  font-family: poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #42446e;
+  font-family: poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
+
+/* --- Styles Common --- */
 
 img {
   pointer-events: none;
@@ -58,17 +62,9 @@ a {
   color: inherit;
 }
 
-.dex {
-  width: 100%;
-  padding: 8rem 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-item {
-  max-width: 375px;;
+.main {
+  height: calc(100vh - 64px);
+  padding: 8rem 0 1rem 0;
 }
 
 .container {
@@ -81,38 +77,9 @@ a {
   margin-left: auto;
 }
 
-.dex-intro {
-  margin: auto;
-}
-
-.nav-link {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.dex-tech-stack h1 {
-  font-size: 3rem;
-}
-
-.dex-tech-stack p {
-  font-weight: regular;
-}
-
-.dex-text {
-    font-size: 1.25rem;
-}
-
-.dex-title {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 600;
-  color: var(--bs-primary-rgb);
-  margin-top: 1.5rem;
-  line-height: 1.2;
-}
-
 .dex-avatar {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .dex-btn {
@@ -141,35 +108,88 @@ a {
 }
 
 .dex-btn:active {
-    color: var(--bs-btn-active-color);
-    background-color: var(--bs-btn-active-bg);
-    border-color: var(--bs-btn-active-border-color);
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
 }
 
-.list-tech-stack {
-  list-style-type: none;
+/* --- Navbar --- */
+.nav-link {
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.dex-tech-stack {
+/* --- Personal --- */
+.personal {
+  width: 100%;
+  padding-bottom: 8rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-intro {
+  margin: auto;
+}
+
+.personal-text {
+  font-size: 1.25rem;
+}
+
+.personal-title {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 600;
+  color: var(--bs-primary-rgb);
+  margin-top: 1.5rem;
+  line-height: 1.2;
+}
+
+/* --- About --- */
+.about {
+  width: 100%;
+  padding-bottom: 8rem;
+  position: relative;
+}
+
+
+/* --- Tech Stack --- */
+.tech-stack {
   width: 100%;
   position: relative;
   padding-bottom: 8rem;
 }
 
-.dex-project .project-item {
+.tech-stack p {
+  font-weight: regular;
+}
+
+.tech-stack .content {
+  margin-top: 8rem;
+}
+
+/* --- Projects --- */
+.project {
+  width: 100%;
+  padding-bottom: 8rem;
+  position: relative;
+}
+
+.project-item {
   max-width: 375px;
 }
 
-.dex-tech-stack .content {
+.project .content {
   margin-top: 8rem;
 }
 
-.dex-project .content {
-  margin-top: 8rem;
+.project .project-item {
+  max-width: 375px;
 }
 
+/* --- Card --- */
 .card-footer a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .card-footer a span {
@@ -180,8 +200,13 @@ a {
   font-size: 1.125rem;
 }
 
+/* --- Contact --- */
+.contact {
+  padding-bottom: 2rem;
+}
+
 .contact-heading {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   word-break: break-all;
   width: 100%;
 }
@@ -192,36 +217,54 @@ a {
   width: 100%;
 }
 
+/* --- Responsive --- */
 @media (min-width: 768px) {
   .nav-link {
     text-align: right;
     text-transform: none;
   }
-}
 
-@media (min-width: 1200px) {
-    .dex-title {
-        font-size: 4rem;
-    }
-
-    .contact-heading {
-      font-size: 3.625rem;
-    }
+  .contact-heading {
+    font-size: 2.625rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .dex {
-    padding: 0 0 4rem 0;
+  .main {
+    padding: 1rem 0 1rem 0;
   }
-  .dex-tech-stack {
+
+  .personal {
     padding-bottom: 4rem;
   }
 
-  .dex-tech-stack .content {
-    margin-top: 1rem;
+  .about {
+    padding-bottom: 4rem;
   }
 
-  .dex-project .content {
-    margin-top: 4rem;
+  .tech-stack {
+    padding-bottom: 4rem;
+  }
+
+  .project {
+    padding-bottom: 4rem;
+  }
+
+  .tech-stack .content {
+    margin-top: 2rem;
+  }
+
+  .project .content {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dex-title {
+    font-size: 4rem;
+  }
+
+  .contact-heading {
+    font-size: 3.625rem;
   }
 }
