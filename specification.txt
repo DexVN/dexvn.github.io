@@ -1,0 +1,22 @@
+10 HTML elements used are:
+
+1. <nav>
+2. <main>
+3. <footer>
+4. <ul>
+5. <li>
+6. <a>
+7. <img>
+8. <h1>
+9. <p>
+10. <div>
+
+5 CSS properties used are:
+
+1. width
+2. height
+3. background-color
+4. font-size
+5. display
+
+I used Bootstrap to design the website interface and JavaScript to handle the event of zooming in/out the avatar on the home page.
